@@ -1,0 +1,66 @@
+:root {
+    /* Paleta de colores */
+    --bg-body: #1e1e24; 
+    --bg-card: #2b2b36;
+    --text-main: #f5f5f5;
+    --text-muted: #a0a0a0;
+    --rojo-motor: #e63946;
+    --rojo-motor-hover: #d62839;
+    --border-color: #3f3f4e;
+    
+    /* Formas y sombras */
+    --borde-redondeado: 8px;
+    --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.25);
+    
+    /* Tipografía */
+    --fuente-principal: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-principal);
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+}
+
+/* Tipografía gruesa e industrial pero limpia para los títulos */
+h1, h2, h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Botón genérico para toda la web */
+.btn-primario {
+    background-color: var(--rojo-motor);
+    color: #ffffff;
+    border: none;
+    padding: 12px 15px;
+    border-radius: var(--borde-redondeado);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primario:hover {
+    background-color: var(--rojo-motor-hover);
+}
+
+/* Enlaces genéricos */
+a {
+    color: var(--rojo-motor);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--rojo-motor-hover);
+    text-decoration: underline;
+}
